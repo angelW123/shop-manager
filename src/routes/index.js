@@ -16,15 +16,20 @@ export const mainRoutes = [{
 
 export const adminRoutes = [{
     path: '/admin/dashboard',
-    component: Index
+    component: Index,
+    isShow: true,
+    title: "看板"
   },
   {
     path: '/admin/products',
     component: List,
-    exact: true
+    exact: true,
+    isShow: true,
+    title: "商品管理"
   },
   {
     path: '/admin/products/edit/:id',
     component: Edit,
+    isShow: false,
   },
 ]
